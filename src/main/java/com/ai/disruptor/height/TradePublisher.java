@@ -10,7 +10,7 @@ public class TradePublisher implements Runnable{
 	
 	private Disruptor<Trade> disruptor;
 	private CountDownLatch countDownLatch;
-	private static int PUBLISH_COUNT = 10;
+	private static int PUBLISH_COUNT = 1;
 	public TradePublisher(CountDownLatch countDownLatch, Disruptor<Trade> disruptor) {
 		this.disruptor = disruptor;
 		this.countDownLatch = countDownLatch;
